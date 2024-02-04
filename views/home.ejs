@@ -1,0 +1,17 @@
+<%- include('includes/html5') %>
+</head>
+<body>
+  <%- include('includes/navigation') %>
+  <main>
+    <% if (users.length > 0) { %>
+    <ul>
+      <% for( let index = 0; index < users.length; index++ ) { %>
+      <li><%= users[index].name %></li>
+      <% } %>
+    </ul>
+    <% }else{ %>
+    <h2>No Users:(</h2>
+    <% } %> 
+  </main>
+</body>
+</html>
